@@ -1,0 +1,15 @@
+domain: oliviermichaelis.dev
+layout:
+- go.kubebuilder.io/v3
+projectName: linkerd-least-latency
+repo: github.com/oliviermichaelis/l3
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  domain: oliviermichaelis.dev
+  group: config
+  kind: ProjectConfig
+  path: github.com/oliviermichaelis/l3/api/v2
+  version: v2
+version: "3"

@@ -1,0 +1,15 @@
+apiVersion: config.oliviermichaelis.dev/v2
+kind: ProjectConfig
+health:
+  healthProbeBindAddress: :8081
+metrics:
+  bindAddress: 127.0.0.1:8080
+webhook:
+  port: 9443
+leaderElection:
+  leaderElect: true
+  resourceName: 5686836a.oliviermichaelis.dev
+metricsApi:
+  serviceName: metrics-api
+  port: 8085
+  namespace: linkerd-viz
